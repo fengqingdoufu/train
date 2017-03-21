@@ -1,0 +1,263 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,p,ul,ol,figure,form{margin: 0;padding: 0;}
+body {
+    background-color: #f5f5f5;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+ul,ol{list-style: outside none none;}
+a{text-decoration: none;}
+img{display: block;max-width: 100%;}
+div,figure,figcaption,input,button{box-sizing:border-box}
+.none{display: none;}
+.clearfix:after{content: '';display: block;clear: both;visibility: hidden;}
+.xs_hidden{}
+
+#header{width: 100%;height: 70px;background: #333;box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    position: fixed;top:0;z-index: 9999;}
+#header .center{max-width: 1263px;height: 70px;margin: 0 auto;}
+#header .logo{width:30%;height: 70px;background: url("../img/logo.jpg") no-repeat;text-indent: -9999px;float: left; }
+#header .link {float: right;height: 70px;line-height: 70px;width:55%;color: #eee;}
+#header .link li{float: left;width: 20%;text-align: center;}
+#header .link a{display: block;color: #eee;}
+#header .link a:hover,#header .link .active{text-decoration: none;background: #000;}
+
+#adver{max-width: 1920px;margin: 0 auto;padding-top: 70px;position: relative;}
+#adver .center{width:40%;height: 60px;background: #000;opacity: 0.4;position: absolute;
+    top: 50%;left: 50%;margin: -10px 0 0 -20%;border-radius: 10px;}
+#adver .copy{opacity:1;background: transparent;padding: 3px 3px 0 3px;}
+#adver .search{width: 70%;height: 52px;background: #eee;font-size: 24px; border-radius: 10px;
+    color: #666;border: 1px solid #666;padding: 0 10px;outline: none;display: block;float:left;}
+#adver .button{width: 30%;height: 54px;background: #eee;font-size: 24px;display:block;float: right;
+    border-radius: 10px;color: #666;border: 1px solid #666;cursor: pointer;font-weight: bold;
+}
+
+#footer {background: #222;clear: both;position: relative;top: 20px; }
+#footer .top{max-width: 1263px;height: 280px;margin: 0 auto;text-align: center;}
+#footer h2{font-size:24px;font-weight: normal;padding: 20px 0 0 20px; }
+#footer hr{width: 90%;border: 1px dashed #333;}
+#footer ul{font-size: 16px;color: #777;text-indent: 20px;line-height: 2;}
+#footer .block{width: 33.3%;height: 280px;display: block;text-align: left;color: #ccc;vertical-align: top;float: left;}
+#footer .bottom{text-align: center;background: #000;color: #777;border-top:1px solid #444;padding: 10px 0;}
+#footer .version{display: none;color: #777;padding: 10px 0;text-align: center;}
+
+#tour{max-width: 1263px;margin: 30px auto 0;overflow:hidden;zoom:1;text-align: center;}
+#tour .center h2{font-size: 45px;letter-spacing: 2px;color: #666;margin: 10px;}
+#tour .center p{color: #666;margin: 10px 0;font-size: 16px;}
+#tour figure{border: 1px solid #ddd;display:block;padding: 4px;border-radius: 4px;margin: 15px 0.4%;
+    width: 32.4%;position: relative;float: left;}
+#tour figure img{vertical-align: middle;}
+#tour figure figcaption{text-align: left;font-size: 14px;color: #777;line-height: 1.5;letter-spacing: 1px}
+#tour .title{color: #333;font-weight: normal;padding: 7px 0 5px 0;}
+#tour .sat{float: right;color: #999;font-size: 13px;font-style: normal;position: relative;top: 5px;right: 5px;}
+#tour .price{color: #f60;font-size: 14px;letter-spacing: 1px}
+#tour .price strong{font-size: 20px;}
+#tour .type{width: 90px;height: 25px;font-size:14px;line-height: 25px;background: #59b200;text-align: center;
+    color: #fff;position: absolute;left: 4px;top:4px;}
+#tour .tour_title{height: 40px;overflow: hidden;}
+
+#headline{max-width: 1920px;padding-top: 70px;margin: 0 auto;position: relative;}
+#headline hgroup{position: absolute;top:45%;left: 18%;}
+#headline h2{color: #eee;font-size: 45px;letter-spacing: 1px;}
+#headline h3{color: #eee;font-size: 24px;letter-spacing: 1px;}
+
+#container{ max-width: 1263px;margin: 30px auto;}
+#container .sidebar{width: 28%;float: right;}
+#container  .list{width: 71%;float: left;}
+#container  .list h2{height:40px;line-height: 40px;border-bottom: 1px dashed #999;padding-bottom: 15px;
+    font-weight: normal;font-size: 30px;}
+
+#container .sidebox{margin-bottom: 10px;border: 1px solid #eee;text-align: center;background: #fff;}
+#container .sidebox h2{font-size: 20px;font-weight: normal;letter-spacing: 1px;text-indent: 8px;
+    height: 40px;line-height: 40px;background: #fafafa;color: #666;text-align: left;}
+
+#container .tag{padding: 10px 0;}
+#container .tag li{display: inline-block;width: 100px;height: 35px;line-height: 35px;margin: 2px 0;
+    text-align: left;text-indent: 8px;}
+#container .tag a{display: block;background: #eee;color: #999}
+#container .tag a:hover{background: #458b00;color: #fff;}
+
+#container .figure{padding: 10px 0;}
+#container .figure figure{display: inline-block;color: #666;padding: 4px;}
+#container .box{padding: 10px 0;}
+#container .box a{display: inline-block;width: 150px;height: 40px;line-height: 40px;margin: 2px 0;background: #eee;color: #999;
+    text-align: left;text-indent: 35px;}
+
+#container .box a.trea1{background: #eee url("../img/trea1.png") no-repeat 10px center}
+#container .box a.trea2{background: #eee url("../img/trea2.png") no-repeat 10px center}
+#container .box a.trea3{background: #eee url("../img/trea3.png") no-repeat 10px center}
+#container .box a.trea4{background: #eee url("../img/trea4.png") no-repeat 10px center}
+
+#container .information .more,#container .scenery .more{width:200px;height: 50px;line-height: 50px;text-align: center;margin: 0 auto;border: 1px solid #ccc;
+    background: #fafafa;border-radius: 10px;cursor: pointer;font-size: 18px;color: #666;}
+
+#container .about{overflow: hidden;}
+#container .about p{line-height: 2;margin: 20px 0;}
+#container .about address{line-height: 1.6;margin: 20px 0;font-style: normal;}
+
+#container .scenery figure{border: 1px solid #ddd;display: block;padding: 4px;border-radius: 4px;margin: 15px 5px 15px 0;
+    width: 48%;float: left;}
+#container .scenery figcaption{text-align: center;padding: 5px 0;}
+
+#container .ticket ,#container .scenery ,#container .about {color: #666;font-size: 20px;}
+
+
+#container .type{margin:20px 0 10px 0;}
+#container .type mark{color: #fff;background: #458b00;padding: 5px 8px;border-radius: 4px; margin:0 10px 0 16px; }
+#container .ticket .left,#container .ticket .right{display: inline-block;width: 43%;}
+#container .ticket .button{display: inline-block;width: 9%;position: relative;}
+#container .ticket .form p{line-height: 3;}
+#container .ticket .form input{width: 250px;height: 30px;color: #666;padding: 5px;background: #fff;border-radius: 4px;
+    border: 1px solid #ccc;margin-left: 16px;font-size: 18px;}
+
+#container .ticket .submit{display:inline-block;font-size: 20px;width: 90px;height: 90px;line-height:90px;cursor: pointer;
+    text-align: center;border-radius: 4px;background: #f60;color: #fff;border: none;position:relative;top:-28px;}
+
+#container .new{}
+#container .new ul{margin-top: 20px;}
+#container .new ul li{display: inline-block;padding: 5px 10px;}
+#container .new ul li:first-child{padding-left: 0;}
+#container .new ul li:nth-child(2){background: #458b00;color: #fff;border-radius: 4px;}
+
+#container .new table{margin-top: 20px;width: 100%;border: 1px solid #ddd;border-collapse: collapse;text-align: center;}
+#container .new th,#container .new tr{border-bottom: 1px solid #ddd;height: 50px;line-height: 50px;}
+#container .new th{}
+#container .new tr:nth-child(2n){background: #fafafa;}
+#container .new tr:hover{background: #eee;}
+#container .new .price{color: #f60;}
+#container .new .more{color: #666;}
+#container .new .reserve{display:inline-block;font-size: 20px;width: 80px;height: 35px;line-height:35px;cursor: pointer;
+    text-align: center;border-radius: 4px;background: #f60;color: #fff;}
+
+
+#container .tour{border:1px solid #eee;margin-bottom: 20px;position: relative;background: #fff;}
+#container .tour:after{content: '';display: block;clear: both;}
+#container .tour img{float: left;width: 45%;}
+#container .tour figcaption{float:right;width: 55%;}
+#container .tour footer{width: 55%;height: 30px;line-height: 30px;color: #666;text-indent: 26px;letter-spacing: 1px;
+    position: absolute;bottom: 0;background: #fafafa;}
+#container .tour time{color: #458b00;  }
+#container .tour ol{padding-left: 25px;color: #666;line-height: 2;}
+#container .tour mark{background: #fff;border: 1px solid #458b00;border-radius: 4px;color: #458b00;padding: 0px 5px;}
+#container .tour hgroup{width: 300px;}
+#container .tour h2{font-size: 24px;font-weight: normal;color: #333;padding: 10px 0 10px 25px;border: none;}
+#container .tour h3{width: 300px;font-size: 16px;font-weight: normal;color: #666;line-height: 1.5;padding: 10px 0 10px 25px;}
+#container .tour .buy{position: absolute;top: 55px;right: 30px;}
+#container .tour .price{color: #f60;font-size: 20px;}
+#container .tour .price strong{font-size: 36px;}
+#container .tour .price s{color: #999;font-size: 16px;}
+#container .tour .reserve {margin-top: 10px;}
+#container .tour .reserve a{display: block;font-size: 20px;width: 152px;height: 40px;line-height: 40px;
+    text-align: center;border-radius: 4px;background: #f60;color: #fff;}
+#container .tour .type{width: 90px;height: 25px;font-size:14px;line-height: 25px;background: #59b200;text-align: center;
+    color: #fff;position: absolute;left: 0;top:0;margin: 0;}
+#container .tour .disc{position: absolute;right: 0;top: 0;width: 52px;height: 52px;background: url("../img/disc.png") no-repeat}
+#container .tour .disc span{transform: rotate(45deg);width:52px;height: 52px;display: block;padding-top: 5px;
+    text-indent: 7px;font-size: 14px;color: #ff7a4b;}
+
+/*当页面大于1200px 时，大屏幕，主要是PC 端*/
+@media (min-width: 1200px) {
+
+}
+/*在992 和1199 像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #adver .center{width: 50%;margin: -10px 0 0 -25%;}
+    #tour .center h2{font-size: 40px;}
+    #headline hgroup{left: 8%}
+    #headline h2{font-size: 36px;}
+    #headline h3{font-size: 20px;}
+    .sidebar{display: none;}
+    #container .list{width: 100%;padding: 0 20px;}
+
+}
+    /*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #adver .center{width: 60%;margin: -10px 0 0 -30%;}
+    #adver .search,#adver .button{font-size: 20px;}
+    #tour .center h2{font-size: 35px;}
+    #headline hgroup{left: 8%}
+    #headline h2{font-size: 30px;}
+    #headline h3{font-size: 16px;}
+    .sidebar{display: none;}
+    #container .list{width: 100%;padding: 0 20px;}
+    #container .list h2{font-size: 28px;}
+    #container .about p{font-size: 18px;}
+    #container .about address{font-size: 18px;}
+    #container .ticket .left,#container .ticket .right,#container .ticket .button{width: 98%;display: block;}
+    #container .ticket .form input{width: 98%;height: 35px;margin: 0;}
+    #container .ticket .form p{line-height: 2;}
+    #container .ticket .submit{display:block;position:static;height:auto;line-height:2;width: 30%;
+    margin: 10px auto}
+    .md-hidden{display: none}
+    #container .tour h2{font-size: 22px;}
+    #container .tour .buy strong{font-size: 22px;}
+    #container .tour .buy{position: absolute;top:auto;right: auto;bottom: 0;padding-left: 25px;}
+}
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+    #header,#header .center,#header .logo,#header .link {height: 45px;}
+    #header .logo, #footer .sm-hidden,.sidebar,.md-hidden{display: none;}
+    #header .link{width:100%;line-height: 45px;}
+    #adver{padding-top: 45px;}
+    #adver .center{width: 70%;margin: -10px 0 0 -35%;height: 53px;}
+    #adver .search,#adver .button{font-size: 18px;height:45px}
+    #footer .version{display: block;}
+    #tour .center h2{font-size: 30px;}
+    #tour .center p{font-size: 14px;}
+    #tour figure {width: 49.2%;}
+    #headline {padding-top: 45px;}
+    #headline hgroup{left: 8%}
+    #headline h2{font-size: 26px;}
+    #headline h3{font-size: 14px;}
+    #container .list{width: 100%;padding: 0 20px;}
+    #container .list h2{font-size: 25px;}
+    #container .about p{font-size: 15px;}
+    #container .about address{font-size: 15px;}
+    #container .ticket .left,#container .ticket .right,#container .ticket .button{width: 98%;display: block;}
+    #container .ticket .form input{width: 98%;height: 35px;margin: 0;}
+    #container .ticket .form p{line-height: 2;}
+    #container .ticket .submit{display:block;position:static;height:auto;line-height:2;width: 30%;
+        margin: 10px auto}
+    #container .ticket .type,#container .ticket .form,#container .ticket .new,#container .form input,#container .ticket .submit,#container .ticket .reserve{font-size: 16px;}
+    #container .tour .buy{position: absolute;top:auto;right: auto;bottom: 0;padding-left: 25px;}
+    #container .tour h2{font-size: 16px;padding: 5px 0 10px 15px;height: 20px;}
+    #container .tour h3{font-size: 14px;padding: 5px 0 10px 15px }
+    #container .tour .buy strong{font-size: 18px;}
+    #container .tour hgroup{width: 100%;}
+}
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+    #header,#header .center,#header .logo,#header .link {height: 45px;}
+    #header .logo,.xs_hidden,#footer .sm-hidden,.sidebar,.md-hidden{display: none;}
+    #header .link{width:100%;line-height: 45px;}
+    #adver{padding-top: 45px;}
+    #header .link li{width: 25%;}
+    #adver .center{width: 80%;margin: -10px 0 0 -40%;height:48px;}
+    #adver .search,#adver .button{font-size: 16px;height:40px;}
+    #footer .version{display: block;}
+    #footer .bottom,#footer .version{font-size: 13px;}
+    #tour .center h2{font-size: 26px;}
+    #tour .center p{font-size: 12px;}
+    #tour figure {width: 99%;}
+    #headline {padding-top: 45px;}
+    #headline hgroup{left: 8%}
+    #headline h2{font-size: 20px;}
+    #headline h3{font-size: 12px;}
+    #container .list{width: 100%;padding: 0 20px;}
+    #container .list h2{font-size: 22px;}
+    #container .about p{font-size: 14px;}
+    #container .about address{font-size: 14px;}
+    #container .scenery figure{width: 99%;}
+    #container .ticket .left,#container .ticket .right,#container .ticket .button{width: 98%;display: block;}
+    #container .ticket .form input{width: 98%;height: 35px;margin: 0;}
+    #container .ticket .form p{line-height: 2;}
+    #container .ticket .submit{display:block;position:static;height:auto;line-height:2;width: 30%;
+        margin: 10px auto}
+    #container .ticket .type,#container .ticket .form,#container .ticket .new,#container .form input,#container .ticket .submit,#container .ticket .reserve{font-size: 12px;}
+    #container .new .reserve{display:inline-block;width: auto;height:auto;line-height:1;cursor: pointer;
+        text-align: center;border-radius: 4px;background: #f60;color: #fff;padding: 8px;}
+    #container .tour hgroup{width: 100%;}
+    #container .tour .buy{position: absolute;top:auto;right: auto;bottom: 0;padding-left: 25px;}
+    #container .tour h2{font-size: 16px;padding: 5px 0 5px 15px;height: 15px;line-height: 15px;}
+    #container .tour h3{font-size: 14px;padding: 5px 0 5px 15px;height: 15px;overflow: hidden;}
+    #container .tour .buy strong,#container .tour .buy .price s,#container .tour .buy .price{font-size: 15px;}
+}
